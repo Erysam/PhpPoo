@@ -7,12 +7,19 @@ use Class\Enums\OfficeStatus;
 class OfficeReservation
 {
 
+    private static int $countResa; // static pour avoir un attribut commun à la classe et non aux instances 
+
     public OfficeStatus $status;
 
-    public function __construct()
+    public function __construct(public string $information)
     {
         $this->status = OfficeStatus::APPROVAL_PENDING; //
 
+    }
+
+    public static function getCountResa()
+    {
+        return self::$countResa;
     }
 }
 
