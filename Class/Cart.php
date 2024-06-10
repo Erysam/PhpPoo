@@ -1,4 +1,7 @@
 <?php
+
+namespace Class;
+
 class Cart
 {
     public function __construct(
