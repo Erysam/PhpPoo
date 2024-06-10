@@ -3,7 +3,8 @@
 use Class\Enums\OfficeStatus;
 use Class\OfficeReservation;
 use Class\Reservation;
-use Class\Singleton;
+use Class\Singleton; // peut servir pour une connexion à la bdd (une seule connexion)
+//ne pas oublier que dans le fonctionnemnt du server php est reinintialisé à chaque connexion web, stateless (serveur sans état) =!server persistant comme avec Java statfull
 
 
 require '../vendor/autoload.php';
